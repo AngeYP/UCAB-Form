@@ -1,0 +1,115 @@
+/*
+ffc526 amarillo
+40b4e5 azul
+047732 verde
+12100c negro
+*/
+
+.ucabblack {
+  background-color: #12100c;
+}
+
+.inner_container {
+  background: #ffc526;
+  margin-top: 2rem;
+  border-radius: 20px;
+  width: 350px;
+  height: 300px;
+  padding: 5%;
+  padding-top: 1.9rem;
+
+}
+
+.inicio_sesion {
+  background: #40b4e5;
+  border-radius: 20px;
+  width: 350px;
+  height: 300px;
+  vertical-align: middle;
+}
+
+.linea_vertical {
+  margin-top: 80px;
+  border-left: 3px solid black;
+  height: 350px;
+  position:absolute;
+  left: 50%;
+}
+
+.contenedor_interno {
+  margin-left: 2rem;
+  margin-top: 3rem;
+}
+
+.contenedor {
+  margin-top: 3rem;
+  width: 900px;
+  height: 500px;
+  background: #047732;
+  border-radius: 20px;
+}
+
+.logoucab {
+  padding-left: 3rem;
+  padding-top: 3rem;
+}
+
+.navbar-dark {
+  background-color: white;
+}
+
+.navbar-brand {
+  color: black !important;
+  font-size: 27px;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-left: 0.3rem;
+}
+
+.navbar {
+    border-radius: 15px;
+}
+
+.parent {
+    justify-content: left !important;
+    align-items: center;
+}
+.child {
+    padding-left: 0.3rem;
+}
+
+.inline-block-child {
+  display: inline-block;
+}
+
+.ini_sesion {
+  font-size: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+  justify-content: center;
+  padding-top: 2rem;
+  padding-left: 5rem;
+  margin-bottom: 0.7rem;
+  color: white;
+}
+
+.i_sesion {
+  margin-right: 4rem;
+  float: right;
+  margin-top: 1.5rem;
+  background-color: #ffc526;
+  color: #12100c;
+  padding: 0.5rem;
+  font-size: 20px;
+  border-radius: 10px;
+}
+
+.aliniar_form {
+  padding-top: 4rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.letra_form {
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+}

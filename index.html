@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="estilos/css/bootstrap.css">
+		<link rel="stylesheet" href="estilos/css/estilos.css">
+		<title>UCAB Form</title>
+
+		<style type="text/css">
+			#left, #middle, #right {
+				display: inline-block; 
+				*display: inline; 
+				zoom: 1; 
+				font-size: 12px;
+			}
+			#left {
+				vertical-align: top; 
+				width: 40%;
+			}
+			#middle {
+				vertical-align: top;
+				width: 10%; 
+			}
+			#right {
+				vertical-align: middle;
+				width: 40%;
+			}
+		</style>
+
+	</head>
+	<body class="ucabblack">
+		<main>
+			<nav class="navbar navbar-dark">
+				<div class="container-fluid parent">
+					<div class='child inline-block-child'>
+						<img src="recursos/logo.png" width="50" height="50" alt="Logo de la UCAB">
+					</div>
+					<div class='child inline-block-child'>
+						<a class="navbar-brand" href="#">UCAB Form</a>
+					</div>
+				</div>
+			</nav>
+
+			<div class="container-fluid parent contenedor">
+				<div id="left" class="logoucab">
+					<img src="recursos/logo_completo.png" style="max-width: 100%;" alt="Logo de la UCAB">
+			    	<div class="container inner_container">
+			    		<img src="recursos/ucab_guayana.jpg" style="width: 100%;" alt="UCAB Guayana">
+			    	</div>
+				</div>
+		    <div id="middle">
+		    	<div class="linea_vertical"></div>
+		    </div>
+		    <div id="right" class="container-fluid contenedor_interno">
+		    	<p class="ini_sesion">Inicio de sesión</p>
+		    	<div class="inicio_sesion">
+						<form>
+							<div class="aliniar_form">
+							  <div class="mb-3">
+							    <label for="exampleInputEmail1" class="form-label letra_form">Usuario</label>
+							    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+							  </div>
+							  <div class="mb-3">
+							    <label for="exampleInputPassword1" class="form-label letra_form">Contraseña</label>
+							    <input type="password" class="form-control" id="exampleInputPassword1">
+							  </div>
+						  </div>
+						</form>
+		    	</div>
+		    </div>
+			</div>
+
+			<button class="i_sesion" type="submit" align="right">Iniciar sesión</button>
+
+		</main>
+
+		<script src="estilos/js/bootstrap.js"></script>
+	</body>
+</html>
