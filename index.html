@@ -3,8 +3,8 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" href="estilos/css/bootstrap.css">
-		<link rel="stylesheet" href="estilos/css/estilos.css">
+		<link rel="stylesheet" href="vistas/estilos/css/bootstrap.css">
+		<link rel="stylesheet" href="vistas/estilos/css/estilos.css">
 		<title>UCAB Form</title>
 
 		<style type="text/css">
@@ -31,22 +31,17 @@
 	</head>
 	<body class="ucabblack">
 		<main>
-			<nav class="navbar navbar-dark">
-				<div class="container-fluid parent">
-					<div class='child inline-block-child'>
-						<img src="recursos/logo.png" width="50" height="50" alt="Logo de la UCAB">
-					</div>
-					<div class='child inline-block-child'>
-						<a class="navbar-brand" href="#">UCAB Form</a>
-					</div>
+			<nav class="navbar navbar-dark navbar-expand-md fixed-top" style="max-height: 82px">
+				<div class="container-fluid">
+					<img src="vistas/recursos/logo.png" class="margin-ucabform" width="200px">
 				</div>
 			</nav>
 
-			<div class="container-fluid parent contenedor">
+			<!-- <div class="container-fluid parent contenedor">
 				<div id="left" class="logoucab">
-					<img src="recursos/logo_completo.png" style="max-width: 100%;" alt="Logo de la UCAB">
+					<img src="vistas/recursos/logo_completo.png" style="max-width: 100%;" alt="Logo de la UCAB">
 			    	<div class="container inner_container">
-			    		<img src="recursos/ucab_guayana.jpg" style="width: 100%;" alt="UCAB Guayana">
+			    		<img src="vistas/recursos/ucab_guayana.jpg" style="max-width: 100%;" alt="UCAB Guayana">
 			    	</div>
 				</div>
 		    <div id="middle">
@@ -69,12 +64,57 @@
 						</form>
 		    	</div>
 		    </div>
+			</div> -->
+
+			<div class="card mx-auto my-5" style="max-width: 50rem; min-height: 400px;">
+			  <div class="card-body">
+
+			  	<div class="container-fluid">
+					  <div class="row">
+					    <div class="col">
+					    		<div class="margen_logoucab">
+										<img src="vistas/recursos/logo_completo.png" alt="Logo de la UCAB" style="max-width:100%">
+									</div>
+							    	<div class="container inner_container">
+							    		<img src="vistas/recursos/ucab_guayana.jpg" style="max-width: 100%; max-height: 100%; border-radius: 15px;" alt="UCAB Guayana">
+							    	</div>
+
+					    </div>
+					    <div class="col-md-auto">
+					      <div class="linea_vertical"></div>
+					    </div>
+					    <div class="col">
+						    	<p class="ini_sesion">Inicio de sesión</p>
+						    	<div class="container_inner">
+										<form>
+											<div class="aliniar_form">
+											  <div class="mb-3">
+											    <label for="exampleInputEmail1" class="form-label letra_form">Usuario</label>
+											    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+											  </div>
+											  <div class="mb-3">
+											    <label for="exampleInputPassword1" class="form-label letra_form">Contraseña</label>
+											    <input type="password" class="form-control" id="exampleInputPassword1">
+											  </div>
+										  </div>
+										</form>
+						    	</div>
+						    </div>
+
+					    </div>
+					  </div>
+					</div>
+
+				</div>
 			</div>
 
-			<button class="i_sesion" type="submit" align="right">Iniciar sesión</button>
+		<div class="bottom_margin">
+			<button class="otro_bottom_margin" type="submit" align="right"> <a href="vistas/pagina_final.html" style="text-decoration: none; color: black;">Iniciar sesión</a></button>
+		</div>
 
 		</main>
 
-		<script src="estilos/js/bootstrap.js"></script>
+		<script src="vistas/estilos/js/bootstrap.js"></script>
+		<script type='text/javascript' src='estilos/js/bootstrap.bundle.min.js'></script>
 	</body>
 </html>
