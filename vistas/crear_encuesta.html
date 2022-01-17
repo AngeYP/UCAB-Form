@@ -7,6 +7,13 @@
 	  <link href='estilos/css/bootstrap.min.css' rel='stylesheet'>
 	  <script type='text/javascript' src='estilos/js/jquery.min.js'></script>
 	  <link rel="stylesheet" href="estilos/css/estilos.css">
+
+	  <style type="text/css">
+	  	::placeholder {
+			   color:white;
+			}
+
+	  </style>
 	  
 	</head>
 
@@ -39,24 +46,19 @@
       </div>
 	  </nav>
 
-		<main>
-			<div class="card mx-auto my-5" style="max-width: 50rem;">
-			  <div class="card-body">
-			  	<h4 style="text-align: center;">¿Desea recibir una copia la encuesta realizada a su correo?</h4>
-			  	<p><br>Correo al que desea enviar la copia:</p>
-			  	<p class="p_text">ejemplo@ejemplo.omg <a href="#">Cambiar</a></p>
-			  </div>
-		  	<div style="position: relative; margin-top: 2rem;">
-		  		<a href="#" class="boton_aceptar" type="button">Aceptar</a>
-		  	</div>
-			</div>
+	  <main>
+	  	<div class="container-md" style="background-color: #047732; margin-top:100px; position: relative; border-radius: 20px;">
+	  		<div class="col-sm-12">
+		      <textarea placeholder="Titulo de la encuesta" class="titulo_encuesta" rows="1" wrap="soft"></textarea>
+		      <textarea placeholder="Descripcion de la encuesta" class="descripcion_encuesta" rows="4" wrap="soft"></textarea>
+		      <div class="margin_correo_text">
+		      	<p class="correo_text">Correo para la encuesta: ejemplo@ejemplo.omg <a href="#">Cambiar</a></p>
+		      </div>
+		    </div>
+	  	</div>
+	  </main>
 
-			<div>
-				<a href="../index.html" class="buttom_volverinicio" type="button">Volver a inicio</a>
-			</div>
-		</main>
-
-		<script src="vistas/estilos/js/bootstrap.js"></script>
+	  <script src="vistas/estilos/js/bootstrap.js"></script>
 	  <script type='text/javascript' src='estilos/js/bootstrap.bundle.min.js'></script>
 	  <script type='text/javascript' src='estilos/js/bootstrap.bundle.js'></script>
 	</body>

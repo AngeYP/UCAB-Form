@@ -129,3 +129,39 @@ ffc526 amarillo
   left: 50%; 
   margin-left: -98px;
 }
+
+/*Creacion de encuesta*/
+
+.titulo_encuesta {
+  margin-top: 15px;
+  background-color: #047732; 
+  border: none; 
+  color: white; 
+  font-size: 25px; 
+  font-family: Arial, Helvetica, sans-serif; 
+  outline: none;
+  width: 100%;
+  resize: none;
+}
+
+.descripcion_encuesta {
+  margin-top: 10px;
+  background-color: #047732; 
+  border: none; 
+  color: white; 
+  font-size: 15px; 
+  font-family: Arial, Helvetica, sans-serif; 
+  outline: none;
+  width: 100%;
+  resize: none;
+}
+
+.correo_text {
+  color: white; 
+  font-size: 15px; 
+  font-family: Arial, Helvetica, sans-serif; 
+}
+
+.margin_correo_text {
+  padding-bottom: 1px;
+}
