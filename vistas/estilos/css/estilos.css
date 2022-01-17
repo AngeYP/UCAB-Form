@@ -9,54 +9,11 @@ ffc526 amarillo
   background-color: #12100c;
 }
 
-.inner_container {
-  background: #ffc526;
-  margin-top: 2rem;
-  border-radius: 20px;
-  max-width: 22rem;
-  max-height: 250px;
-  padding: 0.8rem 1rem 1.5rem 1rem;
-
-}
-
-.margen_logoucab {
-  max-width: 20rem;
-}
-
-.container_inner {
-  background: #40b4e5;
-  margin-top: -0.3rem;
-  border-radius: 20px;
-  max-width: 22rem;
-  max-height: 250px;
-  margin-left: 1rem;
-}
-
-.inicio_sesion {
-  background: #40b4e5;
-  border-radius: 20px;
-  width: 350px;
-  height: 300px;
-  vertical-align: middle;
-}
-
 .linea_vertical {
   border-left: 3px solid #12100c;
   height: 350px;
-  position:absolute;
-}
-
-.contenedor_interno {
-  margin-left: 2rem;
-  margin-top: 3rem;
-}
-
-.contenedor {
-  margin-top: 3rem;
-  width: 900px;
-  height: 500px;
-  background: #047732;
-  border-radius: 20px;
+  position:relative;
+  margin-left: 50%;
 }
 
 .margin-ucabform{
@@ -70,40 +27,21 @@ ffc526 amarillo
   color: #12100c !important;
 }
 
-.navbar-brand {
-  color: #12100c !important;
-  font-size: 20px;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
 .navbar {
     border-radius: 15px;
     background-color: white;
     color: #12100c !important;
 }
 
-.parent {
-    justify-content: left !important;
-    align-items: center;
-}
-.child {
-    padding-left: 0.3rem;
-}
-
-.inline-block-child {
-  display: inline-block;
-}
-
-.ini_sesion {
-  font-size: 25px;
+.letra_form {
+  font-size: 15px;
   font-family: Arial, Helvetica, sans-serif;
-  justify-content: center;
-  padding-top: 2rem;
-  padding-left: 5rem;
   color: white;
 }
 
-.i_sesion {
+.otro_bottom_margin {
+  bottom: 0;
+  right: 0;
   font-family: Arial, Helvetica, sans-serif;
   float: right;
   background-color: #ffc526;
@@ -113,21 +51,17 @@ ffc526 amarillo
   border-radius: 10px;
   position: absolute;
   margin-bottom: 2rem;
-  margin-right: 3rem;
+  margin-right: 5rem;
   bottom: 0;
   right: 0;
 }
 
-.aliniar_form {
-  padding: 2.7rem 1rem 2rem 1rem;
+.bottom_margin {
+  position: relative;
+  min-height: 230px;
+  bottom: 0;
+  right: 0;
 }
-
-.letra_form {
-  font-size: 15px;
-  font-family: Arial, Helvetica, sans-serif;
-  color: white;
-}
-
 
 /*Pagina final*/
 
@@ -149,13 +83,6 @@ ffc526 amarillo
   border: 2px solid #047732;
 }
 
-.cuadro_contenido {
-
-  /*margin-top: 20%;
-  margin-left: 20%;*/
-  justify-content: center;
-}
-
 .my-5 {
   margin-top: 200px !important;
 }
@@ -174,28 +101,10 @@ ffc526 amarillo
   margin-bottom: -0.5rem;
 }
 
-.bottom_margin {
-  position: relative;
-  min-height: 230px;
-  bottom: 0;
-  right: 0;
-}
-
-.otro_bottom_margin {
-  bottom: 0;
-  right: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  float: right;
-  background-color: #ffc526;
-  color: #12100c;
-  padding: 0.5rem;
+.navbar-brand {
+  color: #12100c !important;
   font-size: 20px;
-  border-radius: 10px;
-  position: absolute;
-  margin-bottom: 2rem;
-  margin-right: 5rem;
-  bottom: 0;
-  right: 0;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .boton_aceptar {
@@ -207,4 +116,10 @@ ffc526 amarillo
   background-color: #ffc526;
   border-radius: 10px;
   font-family: Arial, Helvetica, sans-serif;
+}
+
+@media (max-width: 767px) {
+  .hidden-sm {
+    display: none !important;
+  }
 }
