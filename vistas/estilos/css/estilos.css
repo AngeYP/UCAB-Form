@@ -39,28 +39,18 @@ ffc526 amarillo
   color: white;
 }
 
-.otro_bottom_margin {
-  bottom: 0;
-  right: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  float: right;
-  background-color: #ffc526;
-  color: #12100c;
-  padding: 0.5rem;
-  font-size: 20px;
-  border-radius: 10px;
-  position: absolute;
-  margin-bottom: 2rem;
-  margin-right: 5rem;
-  bottom: 0;
-  right: 0;
-}
 
-.bottom_margin {
-  position: relative;
-  min-height: 230px;
-  bottom: 0;
-  right: 0;
+.button_iniciosesion {
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none; 
+  color: #12100c; 
+  padding: 10px 50px 10px 50px; 
+  background-color: #ffc526; 
+  border-radius:15px; 
+  position: relative; 
+  margin-top: 20px; 
+  left: 50%; 
+  margin-left: -90px;
 }
 
 /*Pagina final*/
@@ -84,7 +74,7 @@ ffc526 amarillo
 }
 
 .my-5 {
-  margin-top: 200px !important;
+  margin-top: 150px !important;
 }
 .card {
   border-radius: 20px;
@@ -109,12 +99,15 @@ ffc526 amarillo
 
 .boton_aceptar {
   position: absolute;
+  text-decoration: none;
   bottom: 0;
   right: 0;
   margin-bottom: 1rem;
   margin-right: 1rem;
   background-color: #ffc526;
   border-radius: 10px;
+  padding: 5px 10px 5px 10px;
+  color: #12100c;
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -122,4 +115,17 @@ ffc526 amarillo
   .hidden-sm {
     display: none !important;
   }
+}
+
+.buttom_volverinicio {
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none; 
+  color: #12100c; 
+  padding: 10px 50px 10px 50px; 
+  background-color: #ffc526; 
+  border-radius: 15px; 
+  position: relative; 
+  margin-top: 20px; 
+  left: 50%; 
+  margin-left: -98px;
 }
