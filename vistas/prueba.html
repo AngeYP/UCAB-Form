@@ -1,43 +1,30 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>javascript change image onclick event
-</title>
-<style type="text/css">
-.hovertext {
-  position: relative;
-  border-bottom: 1px dotted black;
-}
+  <meta charset='utf-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+	<title>javascript change image onclick event</title>
+  <style type="text/css">
+    *,
+    *:before,
+    *:after {
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+    }
 
-.hovertext:before {
-  content: attr(data-hover);
-  visibility: hidden;
-  opacity: 0;
-  width: 140px;
-  background-color: black;
-  color: #fff;
-  text-align: center;
-  border-radius: 5px;
-  padding: 5px 0;
-  transition: opacity 1s ease-in-out;
-
-  position: absolute;
-  z-index: 1;
-  left: 0;
-  top: 110%;
-}
-
-.hovertext:hover:before {
-  opacity: 1;
-  visibility: visible;
-}
-
-</style>
+    body {
+      margin: 0;
+      padding: 2rem 1.5rem;
+      font: 1rem/1.5 "PT Sans", Arial, sans-serif;
+      color: #5a5a5a;
+    }
+  </style>
 </head>
 <body>
-	
-  <h1 title="the message">Hello World</h1>
-  <h2 title="the sender">From Nathan</h2>
-
+  <label class="file">
+    <input type="file" id="file" aria-label="File browser example">
+    <span class="file-custom"></span>
+  </label>
 </body>
 </html>

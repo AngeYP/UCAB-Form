@@ -131,6 +131,12 @@ ffc526 amarillo
 }
 
 /*Creacion de encuesta*/
+.conterdor_titulo {
+  background-color: #047732; 
+  margin-top:100px; 
+  position: relative; 
+  border-radius: 20px;
+}
 
 .titulo_encuesta {
   margin-top: 15px;
@@ -154,6 +160,15 @@ ffc526 amarillo
   outline: none;
   width: 100%;
   resize: none;
+}
+
+span.ejemplo {
+  color: #12100c;
+}
+
+a.cambiar {
+  color: blue; 
+  margin-left: 5px;
 }
 
 .correo_text {
@@ -281,8 +296,172 @@ a:hover.quitar_linksdeco {
   }
 }
 
+.quitar_margenlista {
+  min-width: 100px; 
+  background-color: #047732; 
+  border-radius: 20px;
+}
+
 @media (max-width: 1200px) {
   .quitar_margenlista1 {
     max-width: 180px;
   }
 }
+
+.quitar_margenlista1 {
+  min-width: 100px; 
+  background-color: #047732; 
+  border-radius: 15px; 
+  padding-top: 15px; 
+  padding-bottom: 15px;
+}
+
+.estilo_respuestalarga {
+  width: 90%; 
+  color: black;
+  font-size: 15px; 
+  border-width: 2px;
+  border-color: #ffc526; 
+  outline: none; 
+  resize: none; 
+  font-family: Arial, Helvetica, sans-serif; 
+  background-color: white; 
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+
+.button_delete {
+  margin-left: 60%;
+  border: 0;
+  outline: none !important;
+  background-color: transparent;
+}
+
+.x_button_delete {
+  width:16px;
+}
+
+.button_mas {
+  outline: none !important;
+  border: 0;
+  background-color: transparent;
+  margin-bottom: 10px;
+}
+
+.plus_button_mas {
+  width:30px;
+}
+
+input[type="radio"] {
+  width: 20px;
+  height: 20px;
+}
+
+input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+}
+
+.input_seleccion {
+  width: 90%;
+  border: 2px solid #ffc526;
+  font-family: Arial, Helvetica, sans-serif; 
+  font-size: 15px;
+  color: #12100c;
+  height: 35px;
+  outline: none; 
+}
+
+.date_custom {
+  width: 90%;
+  height: 35px;
+  color: #12100c;
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  border: 3px solid #ffc526;
+  background-color: white; 
+  margin-top: 15px;
+  margin-bottom: 5px;
+  outline: none;
+}
+
+.custom-file-label {
+  width: 90%;
+  height: 35px;
+  color: #12100c;
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  border: 3px solid #ffc526;
+  background-color: white; 
+  margin-top: 15px;
+  margin-bottom: 5px;
+  outline: none;
+}
+
+#custom-text {
+  display: inline-block;
+  color: black;
+  width: 100%;
+  background-color: white;
+  padding: 3px;
+  border: 3px solid #ffc526;
+}
+
+.custom_calendario {
+  width: 40px;
+}
+
+.custom_calendarioBtn {
+  background-color: transparent;
+  border: none;
+  outline: none !important;
+}
+
+.button_plus {
+  margin: 30px 0px 30px 0px;
+  border: none;
+  outline: none !important;
+  border-radius: 15px;
+  width: 240px;
+  height: 60px;
+  background-color: #ffc526;
+}
+
+.img_plus {
+  width: 50px;
+  
+}
+
+.container_encuesta {
+  margin-top:20px; 
+  position: relative;
+}
+
+.encuesta_col-xl-8 {
+  background-color: #40b4e5; 
+  border-radius: 20px;
+}
+
+.justify_content {
+  justify-content: center;
+}
+
+.col_encuesta {
+  max-width: 60px;
+}
+
+.col-eliminar {
+  margin-right: 10px;
+}
+
+.Btn_opciones {
+  width: 40px; 
+  justify-content: center;
+}
+
+/*
+ffc526 amarillo
+40b4e5 azul
+047732 verde
+12100c negro
+*/

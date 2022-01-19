@@ -5,12 +5,14 @@
 	  <meta name='viewport' content='width=device-width, initial-scale=1'>
 	  <title>UCAB Form</title>
 	  <link href='estilos/css/bootstrap.min.css' rel='stylesheet'>
-	  <script type='text/javascript' src='estilos/js/jquery.min.js'></script>
 	  <link rel="stylesheet" href="estilos/css/estilos.css">
 
 	  <style type="text/css">
-	  	::placeholder {
+	  	#white_color::placeholder {
 			   color:white;
+			}
+			#black_color::placeholder {
+			   color:gray;
 			}
 
 	  </style>
@@ -47,46 +49,48 @@
 	  </nav>
 
 	  <main>
-	  	<div class="container-md" style="background-color: #047732; margin-top:100px; position: relative; border-radius: 20px;">
+	  	<div class="container-md conterdor_titulo">
 	  		<div class="col-sm-12">
-		      <textarea placeholder="Titulo de la encuesta" class="titulo_encuesta" rows="1" wrap="soft"></textarea>
-		      <textarea placeholder="Descripcion de la encuesta" class="descripcion_encuesta" rows="4" wrap="soft"></textarea>
+		      <textarea placeholder="Titulo de la encuesta" class="titulo_encuesta" id="white_color" rows="1" wrap="soft"></textarea>
+		      <textarea placeholder="Descripcion de la encuesta" class="descripcion_encuesta" rows="4" wrap="soft" id="white_color"></textarea>
 		      <div class="margin_correo_text">
-		      	<p class="correo_text">Correo para la encuesta: <span style="color: #12100c">ejemplo@ejemplo.omg</span> <a href="#" style="color: blue; margin-left: 5px;">Cambiar</a></p>
+		      	<p class="correo_text">Correo para la encuesta: <span class="ejemplo">ejemplo@ejemplo.omg</span> <a href="#" class="cambiar">Cambiar</a></p>
 		      </div>
 		    </div>
 	  	</div>
 
 	  	<!-- Ejemplo de pregunta corta -->
 
-	  	<div class="container" style="margin-top:20px; position: relative;">
+	  	<div class="container container_encuesta">
 	  		<div class="row">
-			    <div class="col-xl-8" style="background-color: #40b4e5; border-radius: 20px;">
+			    <div class="col-xl-8 encuesta_col-xl-8">
 					  <div class="col-sm-12">
-				      <textarea placeholder="Introduzca la pregunta" class="estilo_pregunta" rows="1" wrap="soft"></textarea>
-				      <textarea placeholder="Respuesta corta" maxlength="70" class="estilo_respuestacorta" rows="1" wrap="soft" style="" readonly></textarea>
+				      <textarea placeholder="Introduzca la pregunta" class="estilo_pregunta" rows="1" wrap="soft" id="white_color"></textarea>
+				      <textarea placeholder="Respuesta corta" maxlength="70" class="estilo_respuestacorta" rows="1" wrap="soft" style="" readonly id="white_color"></textarea>
 				    </div>
 			    </div>
 
+			    <!-- Opciones -->
+
 			    <div class="col-xs-12 col-sm-6 col-xl-2" style="">
-			    	<div class="quitar_margenlista1" style="min-width: 100px; background-color: #047732; border-radius: 15px; padding-top: 15px; padding-bottom: 15px;">
-						  <div class="row" style="justify-content: center;">
-						    <div class="col" style="max-width: 60px;">
-						    	<img src="recursos/copy.png" title="Duplicar" style="width: 40px; justify-content: center;">
+			    	<div class="quitar_margenlista1">
+						  <div class="row justify_content">
+						    <div class="col col_encuesta">
+						    	<img src="recursos/copy.png" title="Duplicar" class="Btn_opciones">
 						    </div>
-						    <div class="col" style="max-width: 60px;">
-						      <img src="recursos/no-check.png" id="getImage" onclick="imagefun()" value="Change Image" title="Importante" style="width: 40px; justify-content: center;">
+						    <div class="col col_encuesta">
+						      <img src="recursos/no-check.png" id="rcorta" onclick="respuestacorta()" value="Change Image" title="Importante" class="Btn_opciones">
 						    </div>
 
-						    <div class="col" style="max-width: 60px; margin-right: 10px;">
-						      <img src="recursos/eliminar.png" title="Eliminar" style="width: 40px; justify-content: center;">
+						    <div class="col col-eliminar col_encuesta">
+						      <img src="recursos/eliminar.png" title="Eliminar" class="Btn_opciones">
 						    </div>
 						  </div>
 						</div>
 			    </div>
 
 			    <div class="col-xs-12 col-sm-6 col-xl-2" style="">
-			    	<div class="quitar_margenlista" style="min-width: 100px; background-color: #047732; border-radius: 20px;">
+			    	<div class="quitar_margenlista">
 				      <ul class="list-group list-group-flush">
 							  <li class="list-group-item listgroup_format"><a href="#" class="quitar_linksdeco"><img src="recursos/garrapata.png" class="iconos_listgroup">Seleccion simple</a></li>
 							  <li class="list-group-item listgroup_format"><a href="#" class="quitar_linksdeco"><img src="recursos/casilla.png" class="iconos_listgroup">Seleccion multiple</a></li>
@@ -97,10 +101,289 @@
 							</ul>
 						</div>
 			    </div>
+
+			    <!-- Fin opciones -->
+
 			  </div>
 	  	</div>
 
 	  	<!-- Ejemplo de respuesta larga -->
+
+	  	<div class="container container_encuesta">
+	  		<div class="row">
+			    <div class="col-xl-8 encuesta_col-xl-8">
+					  <div class="col-sm-12">
+				      <textarea placeholder="Introduzca la pregunta" class="estilo_pregunta" rows="1" wrap="soft" id="white_color"></textarea>
+				      <textarea placeholder="Introduzca su respuesta" class="estilo_respuestalarga" rows="2" wrap="soft" id="black_color"></textarea>
+				    </div>
+			    </div>
+
+			    <!-- Opciones -->
+
+			    <div class="col-xs-12 col-sm-6 col-xl-2" style="">
+			    	<div class="quitar_margenlista1">
+						  <div class="row justify_content">
+						    <div class="col col_encuesta">
+						    	<img src="recursos/copy.png" title="Duplicar" class="Btn_opciones">
+						    </div>
+						    <div class="col col_encuesta">
+						      <img src="recursos/no-check.png" id="rlarga" onclick="respuestalarga()" value="Change Image" title="Importante" class="Btn_opciones">
+						    </div>
+
+						    <div class="col col-eliminar col_encuesta">
+						      <img src="recursos/eliminar.png" title="Eliminar" class="Btn_opciones">
+						    </div>
+						  </div>
+						</div>
+			    </div>
+
+			    <div class="col-xs-12 col-sm-6 col-xl-2" style="">
+			    	<div class="quitar_margenlista">
+				      <ul class="list-group list-group-flush">
+							  <li class="list-group-item listgroup_format"><a href="#" class="quitar_linksdeco"><img src="recursos/garrapata.png" class="iconos_listgroup">Seleccion simple</a></li>
+							  <li class="list-group-item listgroup_format"><a href="#" class="quitar_linksdeco"><img src="recursos/casilla.png" class="iconos_listgroup">Seleccion multiple</a></li>
+							  <li class="list-group-item listgroup_format"><a href="#" class="quitar_linksdeco"><img src="recursos/linea.png" class="iconos_listgroup">Respuestas cortas</a></li>
+							  <li class="list-group-item listgroup_format"><a href="#" class="quitar_linksdeco"><img src="recursos/lista.png" class="iconos_listgroup">Respuestas largas</a></li>
+							  <li class="list-group-item listgroup_format"><a href="#" class="quitar_linksdeco"><img src="recursos/calendario.png" class="iconos_listgroup">Fecha</a></li>
+							  <li class="list-group-item listgroup_format"><a href="#" class="quitar_linksdeco"><img src="recursos/imagen.png" class="iconos_listgroup">Multimedia</a></li>
+							</ul>
+						</div>
+			    </div>
+
+			    <!-- Fin opciones -->
+
+			  </div>
+	  	</div>
+
+	  	<!-- Ejemplo de seleccion multiple-->
+
+	  	<div class="container container_encuesta">
+	  		<div class="row">
+			    <div class="col-xl-8 encuesta_col-xl-8">
+					  <div class="col-sm-12">
+					  	<textarea placeholder="Introduzca la pregunta" class="estilo_pregunta" rows="1" wrap="soft" id="white_color"></textarea>
+		          <table id="faqs" class="table table-hover"> <!--CHECK?-->
+		            <tbody>
+		              <tr>
+	                	<td>
+	                		<form>
+											  <input type="radio" name="">
+											  <input type="text" id="black_color" name="" placeholder="Añadir opción" class="input_seleccion">
+											</form>
+										</td>
+		                <td class=""><button class="button_delete"><img src="recursos/borrar.png" class="x_button_delete"></button></td>
+		              </tr>
+		            </tbody>
+		          </table>
+		        	<div class="text-center">
+		        		<button onclick="addfaqs();" class="button_mas"><img src="recursos/anadir.png" class="plus_button_mas"></button>
+		        	</div>
+		        </div>
+		      </div>
+
+			    <!-- Opciones -->
+
+			    <div class="col-xs-12 col-sm-6 col-xl-2" style="">
+			    	<div class="quitar_margenlista1">
+						  <div class="row justify_content">
+						    <div class="col col_encuesta">
+						    	<img src="recursos/copy.png" title="Duplicar" class="Btn_opciones">
+						    </div>
+						    <div class="col col_encuesta">
+						      <img src="recursos/no-check.png" id="rlarga" onclick="respuestalarga()" value="Change Image" title="Importante" class="Btn_opciones">
+						    </div>
+						    <div class="col col-eliminar col_encuesta">
+						      <img src="recursos/eliminar.png" title="Eliminar" class="Btn_opciones">
+						    </div>
+						  </div>
+						</div>
+			    </div>
+			    <div class="col-xs-12 col-sm-6 col-xl-2" style="">
+			    	<div class="quitar_margenlista">
+				      <ul class="list-group list-group-flush">
+							  <li class="list-group-item listgroup_format"><a href="#" class="quitar_linksdeco"><img src="recursos/garrapata.png" class="iconos_listgroup">Seleccion simple</a></li>
+							  <li class="list-group-item listgroup_format"><a href="#" class="quitar_linksdeco"><img src="recursos/casilla.png" class="iconos_listgroup">Seleccion multiple</a></li>
+							  <li class="list-group-item listgroup_format"><a href="#" class="quitar_linksdeco"><img src="recursos/linea.png" class="iconos_listgroup">Respuestas cortas</a></li>
+							  <li class="list-group-item listgroup_format"><a href="#" class="quitar_linksdeco"><img src="recursos/lista.png" class="iconos_listgroup">Respuestas largas</a></li>
+							  <li class="list-group-item listgroup_format"><a href="#" class="quitar_linksdeco"><img src="recursos/calendario.png" class="iconos_listgroup">Fecha</a></li>
+							  <li class="list-group-item listgroup_format"><a href="#" class="quitar_linksdeco"><img src="recursos/imagen.png" class="iconos_listgroup">Multimedia</a></li>
+							</ul>
+						</div>
+			    </div>
+
+			    <!-- Fin opciones -->
+
+			  </div>
+	  	</div>
+
+	  	<!-- Ejemplo de seleccion unica-->
+
+	  	<div class="container container_encuesta">
+	  		<div class="row">
+			    <div class="col-xl-8 encuesta_col-xl-8">
+					  <div class="col-sm-12">
+					  	<textarea placeholder="Introduzca la pregunta" class="estilo_pregunta" rows="1" wrap="soft" id="white_color"></textarea>
+		          <table id="faqs1" class="table table-hover"> <!--CHECK?-->
+		            <tbody>
+		              <tr>
+	                	<td>
+	                		<form>
+											  <input type="checkbox" name="" class="">
+											  <input type="text" id="black_color" name="" placeholder="Añadir opción" class="input_seleccion">
+											</form>
+										</td>
+		                <td class=""><button class="button_delete"><img src="recursos/borrar.png" class="x_button_delete"></button></td>
+		              </tr>
+		            </tbody>
+		          </table>
+		        	<div class="text-center">
+		        		<button onclick="addfaqscheck();" class="button_mas"><img src="recursos/anadir.png" class="plus_button_mas"></button>
+		        	</div>
+		        </div>
+		      </div>
+
+			    <!-- Opciones -->
+
+			    <div class="col-xs-12 col-sm-6 col-xl-2" style="">
+			    	<div class="quitar_margenlista1">
+						  <div class="row justify_content">
+						    <div class="col col_encuesta">
+						    	<img src="recursos/copy.png" title="Duplicar" class="Btn_opciones">
+						    </div>
+						    <div class="col col_encuesta">
+						      <img src="recursos/no-check.png" id="rlarga" onclick="respuestalarga()" value="Change Image" title="Importante" class="Btn_opciones">
+						    </div>
+						    <div class="col col-eliminar col_encuesta">
+						      <img src="recursos/eliminar.png" title="Eliminar" class="Btn_opciones">
+						    </div>
+						  </div>
+						</div>
+			    </div>
+			    <div class="col-xs-12 col-sm-6 col-xl-2" style="">
+			    	<div class="quitar_margenlista">
+				      <ul class="list-group list-group-flush">
+							  <li class="list-group-item listgroup_format"><a href="#" class="quitar_linksdeco"><img src="recursos/garrapata.png" class="iconos_listgroup">Seleccion simple</a></li>
+							  <li class="list-group-item listgroup_format"><a href="#" class="quitar_linksdeco"><img src="recursos/casilla.png" class="iconos_listgroup">Seleccion multiple</a></li>
+							  <li class="list-group-item listgroup_format"><a href="#" class="quitar_linksdeco"><img src="recursos/linea.png" class="iconos_listgroup">Respuestas cortas</a></li>
+							  <li class="list-group-item listgroup_format"><a href="#" class="quitar_linksdeco"><img src="recursos/lista.png" class="iconos_listgroup">Respuestas largas</a></li>
+							  <li class="list-group-item listgroup_format"><a href="#" class="quitar_linksdeco"><img src="recursos/calendario.png" class="iconos_listgroup">Fecha</a></li>
+							  <li class="list-group-item listgroup_format"><a href="#" class="quitar_linksdeco"><img src="recursos/imagen.png" class="iconos_listgroup">Multimedia</a></li>
+							</ul>
+						</div>
+			    </div>
+
+			    <!-- Fin opciones -->
+
+			  </div>
+	  	</div>
+
+	  	<!-- Ejemplo de fecha -->
+
+	  	<div class="container container_encuesta">
+	  		<div class="row">
+			    <div class="col-xl-8 encuesta_col-xl-8">
+					  <div class="col-sm-12">
+				      <textarea placeholder="Introduzca la pregunta" class="estilo_pregunta" rows="1" wrap="soft" id="white_color"></textarea>
+				      <input type="date" placeholder="dd/mm/aaaa" id="black_color" class="date_custom">
+				    </div>
+			    </div>
+
+			    <!-- Opciones -->
+
+			    <div class="col-xs-12 col-sm-6 col-xl-2" style="">
+			    	<div class="quitar_margenlista1">
+						  <div class="row justify_content">
+						    <div class="col col_encuesta">
+						    	<img src="recursos/copy.png" title="Duplicar" class="Btn_opciones">
+						    </div>
+						    <div class="col col_encuesta">
+						      <img src="recursos/no-check.png" id="rlarga" onclick="respuestalarga()" value="Change Image" title="Importante" class="Btn_opciones">
+						    </div>
+						    <div class="col col-eliminar col_encuesta">
+						      <img src="recursos/eliminar.png" title="Eliminar" class="Btn_opciones">
+						    </div>
+						  </div>
+						</div>
+			    </div>
+
+			    <div class="col-xs-12 col-sm-6 col-xl-2" style="">
+			    	<div class="quitar_margenlista">
+				      <ul class="list-group list-group-flush">
+							  <li class="list-group-item listgroup_format"><a href="#" class="quitar_linksdeco"><img src="recursos/garrapata.png" class="iconos_listgroup">Seleccion simple</a></li>
+							  <li class="list-group-item listgroup_format"><a href="#" class="quitar_linksdeco"><img src="recursos/casilla.png" class="iconos_listgroup">Seleccion multiple</a></li>
+							  <li class="list-group-item listgroup_format"><a href="#" class="quitar_linksdeco"><img src="recursos/linea.png" class="iconos_listgroup">Respuestas cortas</a></li>
+							  <li class="list-group-item listgroup_format"><a href="#" class="quitar_linksdeco"><img src="recursos/lista.png" class="iconos_listgroup">Respuestas largas</a></li>
+							  <li class="list-group-item listgroup_format"><a href="#" class="quitar_linksdeco"><img src="recursos/calendario.png" class="iconos_listgroup">Fecha</a></li>
+							  <li class="list-group-item listgroup_format"><a href="#" class="quitar_linksdeco"><img src="recursos/imagen.png" class="iconos_listgroup">Multimedia</a></li>
+							</ul>
+						</div>
+			    </div>
+
+			    <!-- Fin opciones -->
+
+			  </div>
+	  	</div>
+
+	  	<!-- Ejemplo de archivo -->
+
+	  	<div class="container container_encuesta">
+	  		<div class="row">
+			    <div class="col-xl-8 encuesta_col-xl-8">
+					  <div class="col-sm-12">
+				      <textarea placeholder="Introduzca la pregunta" class="estilo_pregunta" rows="1" wrap="soft" id="white_color"></textarea>
+				      <input type="file" id="real-file" hidden="hidden">
+				      <div class="row">
+				      	<div class="col-10">
+					      	<span id="custom-text">Adjuntar archivo</span>
+					      </div>
+					      <div class="col-2">
+					      	<button type="button" id="custom-button" class="custom_calendarioBtn"><img src="recursos/archivo.png" class="custom_calendario"></button>
+					      </div>
+				      </div>
+				    </div>
+			    </div>
+
+			    <!-- Opciones -->
+
+			    <div class="col-xs-12 col-sm-6 col-xl-2" style="">
+			    	<div class="quitar_margenlista1">
+						  <div class="row justify_content">
+						    <div class="col col_encuesta">
+						    	<img src="recursos/copy.png" title="Duplicar" class="Btn_opciones">
+						    </div>
+						    <div class="col col_encuesta">
+						      <img src="recursos/no-check.png" id="rlarga" onclick="respuestalarga()" value="Change Image" title="Importante" class="Btn_opciones">
+						    </div>
+						    <div class="col col-eliminar col_encuesta">
+						      <img src="recursos/eliminar.png" title="Eliminar" class="Btn_opciones">
+						    </div>
+						  </div>
+						</div>
+			    </div>
+
+			    <div class="col-xs-12 col-sm-6 col-xl-2" style="">
+			    	<div class="quitar_margenlista">
+
+				      <ul class="list-group list-group-flush">
+							  <li class="list-group-item listgroup_format"><a href="#" class="quitar_linksdeco"><img src="recursos/garrapata.png" class="iconos_listgroup">Seleccion simple</a></li>
+							  <li class="list-group-item listgroup_format"><a href="#" class="quitar_linksdeco"><img src="recursos/casilla.png" class="iconos_listgroup">Seleccion multiple</a></li>
+							  <li class="list-group-item listgroup_format"><a href="#" class="quitar_linksdeco"><img src="recursos/linea.png" class="iconos_listgroup">Respuestas cortas</a></li>
+							  <li class="list-group-item listgroup_format"><a href="#" class="quitar_linksdeco"><img src="recursos/lista.png" class="iconos_listgroup">Respuestas largas</a></li>
+							  <li class="list-group-item listgroup_format"><a href="#" class="quitar_linksdeco"><img src="recursos/calendario.png" class="iconos_listgroup">Fecha</a></li>
+							  <li class="list-group-item listgroup_format"><a href="#" class="quitar_linksdeco"><img src="recursos/imagen.png" class="iconos_listgroup">Multimedia</a></li>
+							</ul>
+						</div>
+			    </div>
+
+			    <!-- Fin opciones -->
+
+			  </div>
+	  	</div>
+
+	  	<div class="text-center">
+	  		<button class="button_plus" onclick="addelement();"><img src="recursos/mas.png" class="img_plus"></button>
+	  		<!-- <button onclick="addfaqs();" class="button_mas"><img src="recursos/anadir.png" class="plus_button_mas"></button> -->
+	  	</div>
 
 	  </main>
 
@@ -108,16 +391,35 @@
 	  <script type='text/javascript' src='estilos/js/bootstrap.bundle.min.js'></script>
 	  <script type='text/javascript' src='estilos/js/bootstrap.bundle.js'></script>
 	  <script type="text/javascript" src="estilos/js/jquery.min.js"></script>
-    <script>
-      function imagefun() {
-        var Image_Id = document.getElementById('getImage');
-        if (Image_Id.src.match("recursos/no-check.png")) {
-          Image_Id.src = "recursos/check.png";
-        }
-        else {
-          Image_Id.src = "recursos/no-check.png";
-        }
-      }        
-    </script>
+	  <script type="text/javascript" src="estilos/js/funciones.js"></script>
+	  <script type="text/javascript" src="estilos/js/jquery.slim.js"></script>
+	  <script type="text/javascript" src="estilos/js/popper.min.js"></script>
+
+	  <script>
+		// Add the following code if you want the name of the file appear on select
+			$(".custom-file-input").on("change", function() {
+			  var fileName = $(this).val().split("\\").pop();
+			  $(this).siblings(".custom-file-label").addClass("selected").html(fileName);
+			});
+		</script>
+
+		<script type="text/javascript">
+			const realFileBtn = document.getElementById("real-file");
+			const customBtn = document.getElementById("custom-button");
+			const customText = document.getElementById("custom-text");
+
+			customBtn.addEventListener("click",function() {
+					realFileBtn.click();
+			});
+
+			realFileBtn.addEventListener("change",function() {
+				if (realFileBtn.value) {
+					customText.innerHTML = realFileBtn.value.match(/[\/\\]([\w\d\s\.\-\(\)]+)$/)[1];
+				} else {
+					customText.innerHTML = "Adjuntar archivo";
+				}
+			});
+		</script>
+
 	</body>
 </html>
